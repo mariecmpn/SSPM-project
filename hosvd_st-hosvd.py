@@ -9,7 +9,7 @@ import tensorly as tl
 
 
 ############Example of a tensor##############
-image = Image.open('/Users/mariecompain/Desktop/Cours/M1/SSPM/image.jpg')
+image = Image.open('path to the image')
 X = np.asarray(image)
 
 ################RSVD code####################
