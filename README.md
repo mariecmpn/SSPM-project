@@ -10,7 +10,9 @@ Codes of the project:
 - tensor_tucker.py: functions used for the Tucker decomposition;
 - hosvd_st-hosvd.py: tests for the HOSVD and ST_HOSVD;
 - twopass.py: test for the Two-Pass Sketch method;
-- onepass.py: test for the One-Pass Sketch method;
+- onepass.py: test for the One-Pass Sketch method.
+
+Images used for the tests:
 - image.png: image used for the HOSVD and ST-HOSVD;
 - image2.webp: image used for the Two-Pass and One_Pass algorithms.
 
