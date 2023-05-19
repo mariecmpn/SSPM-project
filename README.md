@@ -5,7 +5,7 @@ Common project with https://github.com/imn167/SSPM-Project.git
 Codes of the project:
 
 - rsvd.py: functions used for the RSVD;
-- rsvd_tests.py: tests for the RSVD using the rsvd.py file;
+- rsvd_tests.ipynb: tests for the RSVD using the rsvd.py file;
 - rcur.py: code used for the CUR decomposition tests;
 - tensor_tucker.py: functions used for the Tucker decomposition;
 - hosvd_st-hosvd.py: tests for the HOSVD and ST_HOSVD;
