@@ -6,18 +6,18 @@ from scipy.linalg.interpolative import interp_decomp
 
 ################################### RANGE FINDER ALGO ##############################
 
-#fonction that allow to do the ortho basis of Y in stage 1 
+#function that allow to do the ortho basis of Y in stage 1 
 def ortho(A):
     """ This function return the orthonormal basis of the column of the matrix A"""
     Q, _ = np.linalg.qr(A)
     return Q 
 
-# Fonction that put a matrix to a power q 
+# Function that put a matrix to a power q 
 def power_it(A, q):
     n,m = A.shape
     return np.linalg.matrix_power(A@A.T, q)@A
 
-#fonction for algorithm 3 Adaptive randomized Range Finder 
+#function for algorithm 3 Adaptive randomized Range Finder 
 def adaptive_finder(A, e, r=10):
     #we draw the gaussian vectors 
     m,n = np.shape(A)
@@ -60,7 +60,7 @@ def sub_iter(A, rank, q, oversampling = None): #matrix (m*n)
         Q = ortho(Y)
     return Q #Q_q
 
-#fonction that would implement the Algorithm of the stage 2 in the paper it is section 4  
+#function that would implement the Algorithm of the stage 2 in the paper it is section 4  
 def range_finder(A, rank, q=None, oversampling = None):
     """This function compute the algorithm 2 (Stage 2), with the diferent implementation"""
     m,n = np.shape(A)
@@ -113,7 +113,7 @@ def row_extra(A, Q, e):
     return U, S, V.T #this return XA(J,:) the ID approx of A
 
 
-#fonction that would do the algorithm of the reduction of svd based on the range finder algo 
+#function that would do the algorithm of the reduction of svd based on the range finder algo 
 def rsvd(A, rank,q=None, e=None,oversampling=None, return_range=False, subiter=False):
     m, n = A.shape
     
